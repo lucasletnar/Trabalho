@@ -162,6 +162,15 @@ public class ViewCadastro {
 		}
 	}
 	
+	public void encerrar() {
+		System.out.println("Aplicaçao Encerrada");
+		System.exit(0);
+	}
+	
+	public void erro() {
+		System.out.println("Opção inválida");
+	}
+	
 	public Produtos procurarProdutoPorNome(ArrayList<Produtos> listaProdutos, String nomeProduto) {
 		for(Produtos produto : listaProdutos) {
 			if(nomeProduto.equals(produto.getNome())) {

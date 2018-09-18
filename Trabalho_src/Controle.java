@@ -34,7 +34,7 @@
 					viewCadastro.pesquisar(listaProdutos);
 					break;
 				case "6":
-					System.out.println("Aplicação Encerrada");
+					viewCadastro.encerrar();
 					continuar = false;
 					break;
 				case "7":
@@ -44,8 +44,7 @@
 					viewCadastro.listaProdutosAtivos(listaProdutos);
 					break;
 				default:
-					System.out.println("Opção inválida");
-					System.exit(0);
+					viewCadastro.erro();
 					break;
 				}
 			} while (continuar);
